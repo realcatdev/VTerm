@@ -1,6 +1,8 @@
 # VTerm
 
-VTerm is a macOS-only terminal emulator project written in Rust with Lua for configuration and command extensions.
+VTerm is a fast terminal for macOS written in Rust.
+
+It uses Lua for configuration and command extensions, but the core app, renderer, PTY integration, and terminal model are all built around a Rust codebase.
 
 Status: `beta`
 
