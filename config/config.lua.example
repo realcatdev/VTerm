@@ -1,0 +1,35 @@
+local M = {}
+
+function M.setup()
+  return {
+    title = "VTerm",
+    width = 1280,
+    height = 800,
+    cell_width = 18,
+    cell_height = 22,
+    padding = 28,
+    background = "1c1c1e",
+    foreground = "f2f2f7",
+    accent = "0a84ff",
+    banner = {
+      "User config loaded",
+      "Edit ~/.config/vterm/config.lua and press cmd+r",
+    },
+    shortcuts = {
+      { key = "q", modifiers = { "SUPER" }, action = "quit" },
+      { key = "k", modifiers = { "SUPER" }, action = "clear" },
+      { key = "l", modifiers = { "SUPER" }, action = "demo" },
+      { key = "r", modifiers = { "SUPER" }, action = "reload" },
+    },
+  }
+end
+
+function M.on_command(input)
+  local trimmed = input:gsub("^%s+", ""):gsub("%s+$", "")
+  return {
+    "user config on_command(): " .. trimmed,
+    "remove this handler to fall back to the bundled commands",
+  }
+end
+
+return M

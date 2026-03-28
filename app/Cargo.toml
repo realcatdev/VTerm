@@ -1,0 +1,23 @@
+[package]
+name = "vterm-app"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow = "1.0"
+arboard = "3.6"
+base64 = "0.22"
+fontdue = "0.9"
+mlua = { version = "0.11", features = ["luajit", "vendored", "macros"] }
+portable-pty = "0.9"
+softbuffer = "0.4"
+unicode-segmentation = "1.12"
+unicode-normalization = "0.1"
+unicode-width = "0.2"
+winit = "0.30"
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2 = "0.5.2"
+objc2-foundation = "0.2.2"
+objc2-app-kit = { version = "0.2.2", features = ["NSApplication", "NSMenu", "NSMenuItem", "NSEvent"] }
