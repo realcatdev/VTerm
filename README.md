@@ -18,6 +18,13 @@ Release bar: see [RELEASE_CHECKLIST.md](/Users/sonnet/Documents/Codex/VTerm/repo
 - local selection, clipboard, mouse reporting, and zoom
 - packaged `VTerm.app` and portable alpha build output
 
+## Interesting Implementation Details
+
+- Unicode-aware rendering (grapheme clusters, emoji modifiers, wide characters)
+- ANSI/VT parser with support for CSI, OSC, and DCS sequences
+- Separate main/alternate screen buffers with scrollback
+- Clipboard integration via OSC 52
+
 ## What Still Needs Work
 
 - broader terminal compatibility validation beyond the current shell, `nvim`, `tmux`, and `less` passes
