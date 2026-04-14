@@ -6,7 +6,7 @@ It uses Lua for configuration and command extensions, but the core app, renderer
 
 Status: `beta`
 
-Release bar: see [RELEASE_CHECKLIST.md](/Users/sonnet/Documents/Codex/VTerm/repo/RELEASE_CHECKLIST.md)
+Release bar: see [RELEASE_CHECKLIST.md](https://github.com/realcatdev/VTerm/blob/master/RELEASE_CHECKLIST.md)
 
 ## What Exists Now
 
@@ -60,7 +60,7 @@ User config lives at:
 ~/.config/vterm/config.lua
 ```
 
-The bundled defaults live in [lua/bootstrap.lua](/Users/sonnet/Documents/Codex/VTerm/repo/lua/bootstrap.lua), and user config overrides them on reload.
+The bundled defaults live in [lua/bootstrap.lua](https://github.com/realcatdev/VTerm/blob/master/lua/bootstrap.lua), and user config overrides them on reload.
 
 ## Current Shortcuts
 
